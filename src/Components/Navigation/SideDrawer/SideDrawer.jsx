@@ -8,11 +8,12 @@ import Aux from '../../../hoc/Aux'
 import classes from './SideDrawer.module.css'
 
 export default function SideDrawer(props) {
-    let attachedClasses = [classes.SideDrawer, classes.Close]
+   
+  let attachedClasses = [classes.SideDrawer, classes.Close]
 
-    if (props.open) {
-        attachedClasses = [classes.SideDrawer, classes.Open]
-    }
+  if (props.open) {
+    attachedClasses = [classes.SideDrawer, classes.Open]
+  }
 
     return (
       <Aux>
